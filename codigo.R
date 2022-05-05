@@ -7,3 +7,8 @@ Attack$Category <- as.factor(Attack$Attack.category)
 Attack$Subcategory <- as.factor(Attack$Attack.subcategory)
 plot(Attack$Category)
 plot(Attack$Subcategory)
+Attack$Protocolos <- as.factor(Attack$Protocol)
+plot(Attack$Protocolos)
+Attack$Referencias <- as.factor(Attack$Attack.Reference)
+plot(Attack$Referencias)
+
