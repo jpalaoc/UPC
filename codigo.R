@@ -1,2 +1,2 @@
-x <- 3+3
-x
+datos <- read.csv("Attack.csv")
+datos
