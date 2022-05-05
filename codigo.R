@@ -1,2 +1,9 @@
-datos <- read.csv("Attack.csv")
-datos
+Attack <- read.csv("Attack.csv")
+Attack$Starttime <- as.POSIXct(Attack$Start.time, origin="1970-01-01")
+Attack$Lasttime <- as.POSIXct(Attack$Last.time, origin="1970-01-01")
+plot(Attack$Starttime)
+plot(Attack$Lasttime)
+Attack$Category <- as.factor(Attack$Attack.category)
+Attack$Subcategory <- as.factor(Attack$Attack.subcategory)
+plot(Attack$Category)
+plot(Attack$Subcategory)
